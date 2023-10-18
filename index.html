@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/Galaxy.css">
+  <title>Sign Up!</title>
+
+</head>
+<body class="container">
+  <div class="container col" id="left">
+    <div class="container centered" id="hero-backdrop">
+    
+      <h1>Galaxy Acedemy</h1>
+    </div>
+    </div>
+  </div>
+  <div class="container col" id="right">
+    <div id="combined-call">
+      <p class="cta">A world of learners is an excellent place to live in. <br>They are building the future turning the
+        amteur minds into something.<br> Sign up <em>now</em> to have practical knowledge for practical life</p>
+      <p class="cta">You <em>know</em> you want to.</p>
+    </div>
+    <div id="form-div">
+      <form action="#" id="sign-up">
+        <fieldset class="container col">
+          <legend>Your bright future start here!</legend>
+          <fieldset id="form-top" class="container">
+            <div class="container col">
+              <label for="fname">*First Name</label>
+              <input type="text" name="fname" id="fname" required>
+            </div>
+            <div class="container col">
+              <label for="lname">*Last Name</label>
+              <input type="text" name="lname" id="lname" required>
+            </div>
+          </fieldset>
+          <fieldset id="form-mid" class="container">
+            <div class="container col">
+              <label for="email">*Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="container col">
+              <label for="tel">*Phone Number</label>
+              <input type="tel" name="tel" id="tel" required>
+            </div>
+          </fieldset>
+          <fieldset id="form-bot" class="container">
+            <div class="container col">
+              <label for="pwd">*Password</label>
+              <input type="password" name="pwd" id="pwd" onkeyup="check();" required>
+            </div>
+            <div class="container col">
+              <label for="cpwd">*Confirm Password</label>
+              <input type="password" name="cpwd" id="cpwd" onkeyup="check();" required>
+              <span id="matched"></span>
+            </div>
+          </fieldset>
+        </fieldset>
+      </form>
+    </div>
+    <div>
+      <button type="button" onclick="submit_form();">Create Account</button>
+      <p class="login">Already have an account? <a href="#">Log in</a></p>
+    </div>
+  </div>
+  <script src="assets/galaxy.js"></script>
+</body>
+</html>

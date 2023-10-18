@@ -1,0 +1,170 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  --shadow-color: #616161;
+  --accent-color: rgba(124,105,22,0.5);
+  --form-text-color: #1f2937;
+}
+
+#left {
+  background-image: url('./IMG_5349.JPG');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+
+#left, #right {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#right {
+  padding-top: 15vh;
+  flex-grow: 1;
+  background-color: #f9fafb;
+}
+
+#right div {
+  padding-left: 2.5vw;
+}
+
+#form-div {
+  background-color: white;
+  box-shadow: 10px 5px 10px var(--shadow-color);
+  
+  padding: 16px 0;
+  margin-bottom: 2rem;
+}
+
+#left {
+  justify-content: space-between;
+  width: 33vw;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  border-color: var(--accent-color);
+  border-radius: 8px;
+  padding: 16px 48px;
+  box-shadow: 0 0 5px var(--shadow-color);
+  border: 2px solid var(--accent-color);
+}
+
+button:active {
+  box-shadow: 0 0 0px var(--shadow-color);
+}
+
+a {
+  color: var(--accent-color);
+}
+.login a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+#imgcred, #imgcred a {
+  color: white;
+}
+
+.cta {
+  font-size: larger;
+  font-weight: bold;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  margin: 0;
+  text-align: center;
+}
+
+#hero-backdrop {
+  background-color: rgba(124, 105, 22, 0.5);
+  top: 20vh;
+  position: relative;
+}
+
+#hero-img {
+  height: 125px;
+  margin: 1rem 0 1rem;
+}
+
+#cta-text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  font-size: larger;
+  font-weight: 700;
+  color: var(--form-text-color);
+}
+@font-face {
+  font-family: Norse-Bold;
+  src: url("./IMG_5349.JPG");
+}
+
+fieldset div {
+  padding-right: 4rem;
+}
+
+input {
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  height: 1.5rem;
+  width: 15rem;
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--form-text-color);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #2f5fe2;
+  box-shadow: 0 0 5px var(--shadow-color);
+
+}
+
+#combined-call {
+  margin-bottom: 3vh;
+}
+.container {
+  display: flex
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.size1 {
+  flex: 1;
+}
+
+.size2 {
+  flex: 2;
+}
